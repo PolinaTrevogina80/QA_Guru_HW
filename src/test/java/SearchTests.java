@@ -10,4 +10,10 @@ public class SearchTests {
         $("[name=q]").setValue("selenide").pressEnter();
         $("[id=search]").shouldHave(text("https://selenide.org"));
     }
+
+    void amazonSearchTest() {
+        open("https://www.amazon.com/");
+        $("[name=q]").setValue("selenide").pressEnter();
+        $("[id=search]").shouldHave(text("https://selenide.org"));
+    }
 }
